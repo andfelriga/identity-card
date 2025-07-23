@@ -1,4 +1,10 @@
-*, *::before, *::after {
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,9 +15,9 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #34343d;
-  background-image:  radial-gradient(#444cf7 2px, transparent 2px), radial-gradient(#444cf7 2px, #34343d 2px);
+  background-image: radial-gradient(#444cf7 2px, transparent 2px), radial-gradient(#444cf7 2px, #34343d 2px);
   background-size: 80px 80px;
-  background-position: 0 0,40px 40px;
+  background-position: 0 0, 40px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,12 +26,11 @@ body {
 }
 
 #card {
-  width:740px;
+  width: 740px;
   height: 500px;
   border: solid 1px;
   border-radius: 10px;
-  background: #353a66;
-  background: linear-gradient(90deg, rgba(53, 58, 102, 1) 0%, rgba(23, 27, 38, 1) 52%, rgba(74, 47, 79, 1) 100%);
+  background: linear-gradient(90deg, rgb(25, 44, 82) 0%, rgba(23, 27, 38, 1) 52%, rgba(74, 47, 79, 1) 100%);
   overflow: hidden;
 }
 
@@ -67,199 +72,290 @@ header {
 #img-and-signature {
   display: flex;
   flex-direction: column;
-  width:50%;
-  height: 100%;
+  width: 300px;
+  height: 400px;
   gap: 10px;
+
   & p {
-    font-size: 20px;
+    font-family: "Akaya Telivigala", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
     font-weight: bold;
   }
 }
 
 #profile {
-  width: 100%;
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
   border-radius: 20px;
 }
 
-#firma {
-  height: 60px;
+#signature {
+  padding: 5px;
+  width: 250px;
+  height: 80px;
   object-fit: contain;
-  margin-left: 60px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 10px;
 }
 
 #info {
+  height: 240px;
+  width: 310px;
   display: flex;
   flex-direction: row;
-  width: 60%;
   gap: 40px;
   margin-left: 40px;
-  padding-bottom: 40px;
 
   & img {
-    height: 40px;
+    height: 30px;
     transition: ease-in-out .3s;
   }
 
   & img:hover {
-    height: 46px;
+    height: 36px;
     transition: ease-in-out .3s;
   }
 }
 
+#data {
+  display: flex;
+  height: 400px;
+  width: 350px;
+  flex-direction: column;
+}
+
+#description {
+  margin-left: 40px;
+  align-items: start;
+
+  & .information {
+    height: 100px;
+  }
+}
+
+.info-sides {
+  display: flex;
+  flex-direction: column;
+  width: 153px;
+}
+
 .title {
-  font-size: 20px;
+  font-family: "Akaya Telivigala", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .information {
-  font-size: 20px;
+  padding: 5px;
+  font-family: "Akaya Telivigala", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 10px;
 }
 
 article {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+
   & div {
-    gap: 10px;
-    height: 46px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 
   & a {
     color: inherit;
     text-decoration: none;
+    gap: 10px;
+    height: 36px;
   }
 }
 
-@media (width <= 1000px) {
-  *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+#icons {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 10px;
+}
 
-  body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #34343d;
-    background-image:  radial-gradient(#444cf7 2px, transparent 2px), radial-gradient(#444cf7 2px, #34343d 2px);
-    background-size: 80px 80px;
-    background-position: 0 0,40px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
+@media (width <=1000px) {
 
-  #card {
-    width:370px;
-    height: 250px;
-    border: solid 1px;
-    border-radius: 10px;
-    background: #353a66;
-    background: linear-gradient(90deg, rgba(53, 58, 102, 1) 0%, rgba(23, 27, 38, 1) 52%, rgba(74, 47, 79, 1) 100%);
-    overflow: hidden;
-  }
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-  header {
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-    padding-inline: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #34343d;
+  background-image: radial-gradient(#444cf7 2px, transparent 2px), radial-gradient(#444cf7 2px, #34343d 2px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
-    & p {
-      width: 50px;
-      font-size: 4px;
-      font-weight: lighter;
-      font-family: "Michroma";
-    }
+#card {
+  width: 370px;
+  height: 250px;
+  border: solid 1px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgb(25, 44, 82) 0%, rgba(23, 27, 38, 1) 52%, rgba(74, 47, 79, 1) 100%);
+  overflow: hidden;
+}
 
-    & h1 {
-      width: 100%;
-      font-size: 11px;
-      font-weight: bold;
-      font-family: "Michroma";
-      text-align: right;
-    }
-  }
+header {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 
-  #content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  #img-and-signature {
-    display: flex;
-    flex-direction: column;
-    width:50%;
+  & p {
     height: 100%;
-    gap: 5px;
-    & p {
-      font-size: 10px;
-      font-weight: bold;
-    }
+    font-size: 4px;
+    font-weight: lighter;
+    font-family: "Michroma";
   }
 
-  #profile {
+  & h1 {
     width: 100%;
-    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: "Michroma";
+    text-align: right;
   }
+}
 
-  #firma {
-    height: 30px;
-    object-fit: contain;
-    margin-left: 30px;
-  }
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
 
-  #info {
-    display: flex;
-    flex-direction: row;
-    width: 60%;
-    gap: 20px;
-    margin-left: 20px;
-    padding-bottom: 20px;
+#img-and-signature {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 200px;
+  gap: 5px;
 
-    & img {
-      height: 20px;
-      transition: ease-in-out .3s;
-    }
-
-    & img:hover {
-      height: 23px;
-      transition: ease-in-out .3s;
-    }
-  }
-
-  .title {
-    font-size: 10px;
+  & p {
+    font-family: "Akaya Telivigala", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 9px;
     font-weight: bold;
   }
+}
 
-  .information {
-    font-size: 10px;
+#profile {
+  height: 125px;
+  width: 125px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+#signature {
+  padding: 2.5px;
+  width: 125px;
+  height: 40px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 5px;
+}
+
+#info {
+  height: 120px;
+  width: 155px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 20px;
+
+  & img {
+    height: 15px;
+    transition: ease-in-out .3s;
   }
 
-  article {
-    margin-bottom: 20px;
-    & div {
-      gap: 5px;
-      height: 23px;
-      display: flex;
-      flex-direction: row;
-    }
-
-    & a {
-      color: inherit;
-      text-decoration: none;
-    }
+  & img:hover {
+    height: 18px;
+    transition: ease-in-out .3s;
   }
+}
+
+#data {
+  display: flex;
+  height: 200px;
+  width: 175px;
+  flex-direction: column;
+}
+
+#description {
+  margin-left: 20px;
+  align-items: start;
+
+  & .information {
+    height: 50px;
+  }
+}
+
+.info-sides {
+  display: flex;
+  flex-direction: column;
+  width: 76.5px;
+}
+
+.title {
+  font-family: "Akaya Telivigala", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.information {
+  padding: 2.5px;
+  font-family: "Akaya Telivigala", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 9px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 5px;
+}
+
+article {
+  margin-bottom: 15px;
+
+  & div {
+    padding: 2.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+    gap: 5px;
+    height: 18px;
+  }
+}
+
+#icons {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 5px;
+}
+
 }
