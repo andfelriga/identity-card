@@ -300,11 +300,6 @@ article {
       height: 15px;
       transition: ease-in-out .3s;
     }
-
-    & img:hover {
-      height: 18px;
-      transition: ease-in-out .3s;
-    }
   }
 
   #data {
