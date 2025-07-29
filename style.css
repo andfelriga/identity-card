@@ -297,8 +297,11 @@ article {
     margin: 0;
 
     & img {
-      height: 15px;
-      transition: ease-in-out .3s;
+      height: 19px;
+    }
+
+    & img:hover {
+      height: 19px;
     }
   }
 
@@ -365,5 +368,6 @@ article {
     flex-direction: column;
     background: rgba(255, 255, 255, .2);
     border-radius: 5px;
+    gap: 7px;
   }
 }
